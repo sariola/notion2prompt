@@ -1,0 +1,6 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&toggle(\"Toggle header\", vec![paragraph(\"Hidden content\")]))"
+---
+▸ Toggle header
+  Hidden content

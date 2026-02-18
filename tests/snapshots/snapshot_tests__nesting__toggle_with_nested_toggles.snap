@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&toggle(\"Outer toggle\",\nvec![toggle(\"Inner toggle\", vec![paragraph(\"Deeply nested content\")])]))"
+---
+▸ Outer toggle
+  ▸ Inner toggle
+    Deeply nested content

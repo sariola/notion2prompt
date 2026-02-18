@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&link_to_page(\"aabbccdd-aabb-ccdd-aabb-ccddaabbccdd\"))"
+---
+[[aabbccddaabbccddaabbccddaabbccdd]]

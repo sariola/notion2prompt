@@ -1,0 +1,22 @@
+---
+source: tests/snapshot_tests.rs
+expression: "compose_page_markdown(&page, &RenderContext::default()).unwrap()"
+---
+# Development Guide
+
+## Properties
+
+
+# Getting Started
+Welcome to the development guide.
+## Installation
+```bash
+cargo install notion2prompt
+```
+## Usage
+Run the CLI with your Notion page URL.
+
+## Metadata
+
+- **Page ID**: 00000000000000000000000000000002
+- **URL**: https://www.notion.so/00000000-0000-0000-0000-000000000002

@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&file_block(\"https://example.com/doc.pdf\"))"
+---
+[File: https://example.com/doc.pdf]

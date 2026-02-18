@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: render_one(&paragraph_rich(items))
+---
+Normal **bold** and *italic* text.

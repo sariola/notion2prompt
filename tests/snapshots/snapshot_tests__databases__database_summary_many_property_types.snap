@@ -1,0 +1,25 @@
+---
+source: tests/snapshot_tests.rs
+expression: normalize_table_rows(&compose_database_summary(&db).unwrap())
+---
+# Comprehensive DB
+
+## Schema
+
+| Property | Type |
+|----------|------|
+| Amount | number |
+| Assignee | people |
+| Created | created_time |
+| Done | checkbox |
+| Due Date | date |
+| Email | email |
+| Name | title |
+| Website | url |
+
+## Data
+
+Database contains 1 pages.
+## Metadata
+
+- **Database ID**: 00000000000000000000000000000003

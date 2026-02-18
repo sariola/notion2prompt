@@ -1,0 +1,17 @@
+[package]
+name = "notion2prompt-python"
+version = "0.1.0"
+edition = "2021"
+description = "Python bindings for notion2prompt via PyO3"
+license = "MIT"
+
+[lib]
+name = "_notion2prompt"
+crate-type = ["cdylib"]
+
+[dependencies]
+notion2prompt = { path = "../.." }
+pyo3 = { version = "0.23", features = ["extension-module"] }
+pyo3-async-runtimes = { version = "0.23", features = ["tokio-runtime"] }
+tokio = { version = "1.0", features = ["full"] }
+serde_json = "1.0"

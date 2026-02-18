@@ -1,0 +1,101 @@
+{
+  "object": "database",
+  "id": "1abcd412-8533-800c-984c-f7a33514bc7d",
+  "created_time": "2025-03-03T14:02:00.000Z",
+  "last_edited_time": "2025-03-03T14:52:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "5eee965e-5538-4349-83c7-07d20ac9f6ea"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "4154a42d-c1d7-4d97-8fb7-8c31df28963c"
+  },
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Key Highlights",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Key Highlights",
+      "href": null
+    }
+  ],
+  "description": [],
+  "icon": null,
+  "cover": null,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "type": "title",
+      "title": {}
+    },
+    "Category": {
+      "id": "category",
+      "name": "Category",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "tech",
+            "name": "Technology",
+            "color": "blue"
+          },
+          {
+            "id": "ai",
+            "name": "AI/ML",
+            "color": "green"
+          },
+          {
+            "id": "business",
+            "name": "Business",
+            "color": "orange"
+          }
+        ]
+      }
+    },
+    "Priority": {
+      "id": "priority",
+      "name": "Priority",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "high",
+            "name": "High",
+            "color": "red"
+          },
+          {
+            "id": "medium",
+            "name": "Medium",
+            "color": "yellow"
+          },
+          {
+            "id": "low",
+            "name": "Low",
+            "color": "gray"
+          }
+        ]
+      }
+    }
+  },
+  "parent": {
+    "type": "page_id",
+    "page_id": "1abcd412-8533-8084-9d72-c1cd98f9e8ef"
+  },
+  "url": "https://www.notion.so/1abcd412853380849d72c1cd98f9e8ef",
+  "public_url": null,
+  "archived": false,
+  "is_inline": false,
+  "in_trash": false
+}

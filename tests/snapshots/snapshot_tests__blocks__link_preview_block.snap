@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&link_preview(\"https://github.com/repo\"))"
+---
+[Link Preview: https://github.com/repo]

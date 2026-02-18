@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&embed(\"https://twitter.com/status/123\"))"
+---
+[Embed: https://twitter.com/status/123]

@@ -1,0 +1,10 @@
+---
+source: tests/snapshot_tests.rs
+expression: output
+---
+▸ **Project Overview**
+This project integrates Flow AI's advanced capabilities with Amundi's technology infrastructure to enhance portfolio management and risk analysis.
+1. **Key Features**
+- Real-time market data analysis
+- Automated risk assessment
+🗄️ [[Implementation Timeline]]

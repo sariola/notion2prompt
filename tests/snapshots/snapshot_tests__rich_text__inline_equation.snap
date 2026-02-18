@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&paragraph_rich(vec![item]))"
+---
+$x^2 + y^2 = r^2$

@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[numbered_with_children(\"Parent\",\nvec![numbered(\"Sub 1\"), numbered(\"Sub 2\")]), numbered(\"Next parent\"),])"
+---
+1. Parent
+   1. Sub 1
+   2. Sub 2
+2. Next parent

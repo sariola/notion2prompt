@@ -1,0 +1,31 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "notion2prompt"
+version = "0.1.0"
+description = "Convert Notion pages and databases into structured prompts for AI models"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["notion", "ai", "prompt", "markdown", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup",
+]
+
+[project.scripts]
+notion2prompt = "notion2prompt.cli:main"
+
+[tool.maturin]
+manifest-path = "crates/notion2prompt-python/Cargo.toml"
+python-source = "python"
+module-name = "notion2prompt._notion2prompt"
+features = ["pyo3/extension-module"]

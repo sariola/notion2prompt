@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: output
+---
+This is a collaboration between Flow AI and JetBrains.

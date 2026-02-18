@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[bulleted_with_children(\"Parent\",\nvec![bulleted(\"Child A\"), bulleted(\"Child B\")]), bulleted(\"Sibling\"),])"
+---
+- Parent
+   - Child A
+   - Child B
+- Sibling

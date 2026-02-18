@@ -1,0 +1,6 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&column_list(vec![vec![paragraph(\"Column 1 content\")],\nvec![paragraph(\"Column 2 content\")],]))"
+---
+Column 1 content
+Column 2 content

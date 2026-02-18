@@ -1,0 +1,9 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&code(\"fn main() {\\n    println!(\\\"hello\\\");\\n}\", \"rust\"))"
+---
+```rust
+fn main() {
+    println!("hello");
+}
+```

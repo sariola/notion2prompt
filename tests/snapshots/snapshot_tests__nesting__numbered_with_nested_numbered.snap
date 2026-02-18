@@ -1,0 +1,9 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[numbered_with_children(\"Chapter 1\",\nvec![numbered(\"Section 1.1\"), numbered(\"Section 1.2\")]),\nnumbered_with_children(\"Chapter 2\", vec![numbered(\"Section 2.1\")]),])"
+---
+1. Chapter 1
+   1. Section 1.1
+   2. Section 1.2
+2. Chapter 2
+   1. Section 2.1

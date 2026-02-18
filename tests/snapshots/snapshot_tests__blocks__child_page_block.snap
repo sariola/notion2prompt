@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&child_page(\"My Sub-Page\"))"
+---
+📄 [[My Sub-Page]]

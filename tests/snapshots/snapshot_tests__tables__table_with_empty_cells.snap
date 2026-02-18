@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: render_one(&t)
+---
+| Header 1 | Header 2 | Header 3 |
+| --- | --- | --- |
+| Data |  | More data |
+|  | Only middle |  |

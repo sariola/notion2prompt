@@ -1,0 +1,37 @@
+.env
+.envrc
+
+# Rust
+/target
+*.rlib
+
+# Python
+.venv
+__pycache__/
+*.pyc
+*.so
+*.pyd
+dist/
+
+# Editors
+.vscode/
+.idea/
+*.orig
+.DS_Store
+
+# Nix
+.direnv
+
+# Claude Code
+.claude/
+
+# Test output files
+test_*.md
+*_test.md
+comprehensive_test.md
+full_output.md
+new_output*.md
+toc_test.md
+notion_content.txt
+notion_context
+result

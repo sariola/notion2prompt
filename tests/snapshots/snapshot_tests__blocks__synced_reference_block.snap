@@ -1,0 +1,6 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&synced_reference(\"aabbccdd-aabb-ccdd-aabb-ccddaabbccdd\",\nvec![paragraph(\"Referenced content\")]))"
+---
+[Synced from: aabbccddaabbccddaabbccddaabbccdd]
+Referenced content

@@ -1,0 +1,33 @@
+---
+source: tests/snapshot_tests.rs
+expression: "compose_page_markdown(&page, &RenderContext::default()).unwrap()"
+---
+# Block Showcase
+
+## Properties
+
+
+# Text Blocks
+A simple paragraph.
+> A thoughtful quote.
+> 📝  Take note!
+## Lists
+- Bullet A
+- Bullet B
+1. Step 1
+1. Step 2
+## Media
+![Image](https://example.com/img.png)
+---
+## Code
+```javascript
+console.log('hello')
+```
+$$
+\int_0^1 x^2 dx = \frac{1}{3}
+$$
+
+## Metadata
+
+- **Page ID**: 00000000000000000000000000000002
+- **URL**: https://www.notion.so/00000000-0000-0000-0000-000000000002

@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&numbered(\"First item\"))"
+---
+1. First item

@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[bulleted(\"First\"), bulleted(\"Second\"), bulleted(\"Third\"),])"
+---
+- First
+- Second
+- Third

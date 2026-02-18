@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&child_database(\"Key Highlights\"))"
+---
+🗄️ [[Key Highlights]]

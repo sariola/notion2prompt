@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&heading1(\"Main Title\"))"
+---
+# Main Title

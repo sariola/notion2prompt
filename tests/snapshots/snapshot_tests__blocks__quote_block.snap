@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&quote(\"A wise saying\"))"
+---
+> A wise saying

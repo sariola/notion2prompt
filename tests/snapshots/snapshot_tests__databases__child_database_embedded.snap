@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: render_one(&block)
+---
+🗄️ **Metrics**
+
+*No data available.*

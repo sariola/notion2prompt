@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&image_with_caption(\"https://example.com/photo.jpg\",\n\"A beautiful photo\"))"
+---
+![A beautiful photo](https://example.com/photo.jpg)

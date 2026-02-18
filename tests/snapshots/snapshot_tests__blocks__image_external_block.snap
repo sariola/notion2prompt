@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&image_external(\"https://example.com/image.png\"))"
+---
+![Image](https://example.com/image.png)

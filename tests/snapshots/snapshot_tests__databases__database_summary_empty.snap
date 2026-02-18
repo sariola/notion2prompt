@@ -1,0 +1,18 @@
+---
+source: tests/snapshot_tests.rs
+expression: compose_database_summary(&db).unwrap()
+---
+# Empty Database
+
+## Schema
+
+| Property | Type |
+|----------|------|
+| Title | title |
+
+## Data
+
+*Database has no rows.*
+## Metadata
+
+- **Database ID**: 00000000000000000000000000000003

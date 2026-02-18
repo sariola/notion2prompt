@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[bulleted_with_children(\"Level 1\",\nvec![bulleted_with_children(\"Level 2\", vec![bulleted(\"Level 3\")])])])"
+---
+- Level 1
+   - Level 2
+      - Level 3

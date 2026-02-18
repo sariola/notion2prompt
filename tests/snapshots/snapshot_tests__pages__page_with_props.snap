@@ -1,0 +1,18 @@
+---
+source: tests/snapshot_tests.rs
+expression: "normalize_property_lines(&compose_page_markdown(&page,\n&RenderContext::default()).unwrap())"
+---
+# Feature Spec
+
+## Properties
+
+- **Done**: ⬜
+- **Priority**: High
+- **Status**: In Progress
+
+Description of the feature.
+
+## Metadata
+
+- **Page ID**: 00000000000000000000000000000002
+- **URL**: https://www.notion.so/00000000-0000-0000-0000-000000000002

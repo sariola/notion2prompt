@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[numbered(\"First\"), numbered(\"Second\"), numbered(\"Third\"),])"
+---
+1. First
+2. Second
+3. Third

@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&code(\"def hello():\\n    print(\\\"hello\\\")\", \"python\"))"
+---
+```python
+def hello():
+    print("hello")
+```

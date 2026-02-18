@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&equation(\"E = mc^2\"))"
+---
+$$
+E = mc^2
+$$

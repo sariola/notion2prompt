@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&paragraph_rich(vec![item]))"
+---
+**Bold text**

@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&todo(\"Completed task\", true))"
+---
+- [x] Completed task

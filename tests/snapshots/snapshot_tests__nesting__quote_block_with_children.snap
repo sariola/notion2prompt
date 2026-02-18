@@ -1,0 +1,6 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&quote_with_children(\"Main quote\",\nvec![paragraph(\"Attribution or follow-up\")]))"
+---
+> Main quote
+Attribution or follow-up

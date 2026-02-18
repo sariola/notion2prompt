@@ -1,0 +1,20 @@
+---
+source: tests/snapshot_tests.rs
+expression: normalize_table_rows(&output)
+---
+# Key Highlights
+
+## Schema
+
+| Property | Type |
+|----------|------|
+| Category | select |
+| Name | title |
+| Priority | select |
+
+## Data
+
+*Database has no rows.*
+## Metadata
+
+- **Database ID**: 1abcd4128533800c984cf7a33514bc7d

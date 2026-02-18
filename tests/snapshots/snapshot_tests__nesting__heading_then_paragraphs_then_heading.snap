@@ -1,0 +1,9 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[heading1(\"Introduction\"), paragraph(\"First paragraph under intro.\"),\nparagraph(\"Second paragraph under intro.\"), heading2(\"Details\"),\nparagraph(\"Content under details.\"),])"
+---
+# Introduction
+First paragraph under intro.
+Second paragraph under intro.
+## Details
+Content under details.

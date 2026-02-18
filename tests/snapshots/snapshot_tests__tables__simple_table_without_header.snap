@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: render_one(&t)
+---
+| A1 | B1 |
+| --- | --- |
+| A2 | B2 |

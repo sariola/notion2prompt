@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&toggle(\"Click to expand\",\nvec![paragraph(\"First paragraph inside toggle\"),\nparagraph(\"Second paragraph inside toggle\"),]))"
+---
+▸ Click to expand
+  First paragraph inside toggle
+  Second paragraph inside toggle

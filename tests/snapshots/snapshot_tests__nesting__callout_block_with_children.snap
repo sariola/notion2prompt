@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&callout_with_children(\"Warning message\", \"⚠️\",\nvec![paragraph(\"Details about the warning\"), bulleted(\"Step 1\"),\nbulleted(\"Step 2\"),]))"
+---
+> ⚠️  Warning message
+Details about the warning
+- Step 1
+- Step 2

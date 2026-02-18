@@ -1,0 +1,7 @@
+---
+source: tests/snapshot_tests.rs
+expression: render_one(&t)
+---
+| A | B | C | D | E |
+| --- | --- | --- | --- | --- |
+| 1 | 2 | 3 | 4 | 5 |

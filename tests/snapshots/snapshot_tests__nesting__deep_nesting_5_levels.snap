@@ -1,0 +1,10 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&toggle(\"Level 1\",\nvec![toggle(\"Level 2\",\nvec![toggle(\"Level 3\",\nvec![toggle(\"Level 4\",\nvec![toggle(\"Level 5\", vec![paragraph(\"Bottom\")])])])])]))"
+---
+▸ Level 1
+  ▸ Level 2
+    ▸ Level 3
+      ▸ Level 4
+        ▸ Level 5
+          Bottom

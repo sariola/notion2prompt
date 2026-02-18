@@ -1,0 +1,249 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "block",
+      "id": "1bacd412-8533-800f-a1c0-d624251e0a50",
+      "parent": {
+        "type": "page_id",
+        "page_id": "1bacd412-8533-8084-a26f-d94d90a9e2b3"
+      },
+      "created_time": "2024-01-15T10:30:00.000Z",
+      "last_edited_time": "2024-01-15T10:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": true,
+      "archived": false,
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Project Overview",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Project Overview",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bacd412-8533-80f7-aa3a-fece05e7f165",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bacd412-8533-800f-a1c0-d624251e0a50"
+      },
+      "created_time": "2024-01-15T10:31:00.000Z",
+      "last_edited_time": "2024-01-15T10:31:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "This project integrates Flow AI's advanced capabilities with Amundi's technology infrastructure to enhance portfolio management and risk analysis.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "This project integrates Flow AI's advanced capabilities with Amundi's technology infrastructure to enhance portfolio management and risk analysis.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bacd412-8533-80ef-b910-f348016a6430",
+      "parent": {
+        "type": "page_id",
+        "page_id": "1bacd412-8533-8084-a26f-d94d90a9e2b3"
+      },
+      "created_time": "2024-01-15T10:32:00.000Z",
+      "last_edited_time": "2024-01-15T10:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": true,
+      "archived": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Features",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Features",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bacd412-8533-80c2-b4c1-c298369486cf",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bacd412-8533-80ef-b910-f348016a6430"
+      },
+      "created_time": "2024-01-15T10:33:00.000Z",
+      "last_edited_time": "2024-01-15T10:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": false,
+      "archived": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time market data analysis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Real-time market data analysis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bacd412-8533-80d3-a87e-cfd44dfe35fc",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bacd412-8533-80ef-b910-f348016a6430"
+      },
+      "created_time": "2024-01-15T10:33:00.000Z",
+      "last_edited_time": "2024-01-15T10:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": false,
+      "archived": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Automated risk assessment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Automated risk assessment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bacd412-8533-80a1-8d54-d20b49215fb5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "1bacd412-8533-8084-a26f-d94d90a9e2b3"
+      },
+      "created_time": "2024-01-15T10:35:00.000Z",
+      "last_edited_time": "2024-01-15T10:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7bd7ea86-e5cc-417f-b18e-a26ea64141a0"
+      },
+      "has_children": false,
+      "archived": false,
+      "type": "child_database",
+      "child_database": {
+        "title": "Implementation Timeline"
+      }
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "block",
+  "block": {},
+  "request_id": "7e89d3f4-8e91-4b5c-9a4e-3f2c1d8e9f0a"
+}

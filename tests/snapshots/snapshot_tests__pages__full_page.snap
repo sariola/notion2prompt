@@ -1,0 +1,28 @@
+---
+source: tests/snapshot_tests.rs
+expression: "compose_page_markdown(&page, &RenderContext::default()).unwrap()"
+---
+# Weekly Standup Notes
+
+## Properties
+
+- **Date**: 2026-02-16
+
+# Summary
+This week's key accomplishments.
+- Shipped feature X
+- Fixed critical bug Y
+## Action Items
+- [ ] Follow up with design team
+- [x] Deploy to production
+---
+## Resources
+[🔖 https://docs.example.com]
+```sql
+SELECT * FROM users;
+```
+
+## Metadata
+
+- **Page ID**: 00000000000000000000000000000002
+- **URL**: https://www.notion.so/00000000-0000-0000-0000-000000000002

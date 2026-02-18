@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&unsupported(\"new_block_type\"))"
+---
+[Unsupported block type: new_block_type]

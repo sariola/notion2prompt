@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[todo(\"Buy groceries\", true), todo(\"Clean house\", false),\ntodo(\"Read book\", true), todo(\"Exercise\", false),])"
+---
+- [x] Buy groceries
+- [ ] Clean house
+- [x] Read book
+- [ ] Exercise

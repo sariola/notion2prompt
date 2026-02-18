@@ -1,0 +1,79 @@
+{
+  "object": "page",
+  "id": "1abcd412-8533-8084-9d72-c1cd98f9e8ef",
+  "created_time": "2025-03-03T14:01:00.000Z",
+  "last_edited_time": "2025-03-03T14:21:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "5eee965e-5538-4349-83c7-07d20ac9f6ea"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "5eee965e-5538-4349-83c7-07d20ac9f6ea"
+  },
+  "cover": null,
+  "icon": null,
+  "parent": {
+    "type": "database_id",
+    "database_id": "2fe162e0-a515-4c1e-a6ca-d5cf3ee5b324"
+  },
+  "archived": false,
+  "in_trash": false,
+  "properties": {
+    "Created time": {
+      "id": "GuBh",
+      "type": "created_time",
+      "created_time": "2025-03-03T14:01:00.000Z"
+    },
+    "Type": {
+      "id": "eQ%3Bn",
+      "type": "multi_select",
+      "multi_select": []
+    },
+    "Creator": {
+      "id": "qIWb",
+      "type": "created_by",
+      "created_by": {
+        "object": "user",
+        "id": "5eee965e-5538-4349-83c7-07d20ac9f6ea",
+        "name": "Bernardo",
+        "avatar_url": "https://lh3.googleusercontent.com/a-/AOh14Ghjl9GRQFrlV5bkPbXOaIqCgI8q-9817rtY5CgA=s100",
+        "type": "person",
+        "person": {
+          "email": "bernardo@flowrite.com"
+        }
+      }
+    },
+    "Topic": {
+      "id": "slnn",
+      "type": "multi_select",
+      "multi_select": []
+    },
+    "Name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AIE Agents at Work - NYC 2025 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AIE Agents at Work - NYC 2025 ",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/AIE-Agents-at-Work-NYC-2025-1abcd412853380849d72c1cd98f9e8ef",
+  "public_url": null,
+  "request_id": "7ceb34a0-2321-4691-895a-a03d8047561f"
+}

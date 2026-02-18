@@ -1,0 +1,20 @@
+---
+source: tests/snapshot_tests.rs
+expression: normalize_table_rows(&compose_database_summary(&db).unwrap())
+---
+# Project Tracker
+
+## Schema
+
+| Property | Type |
+|----------|------|
+| Name | title |
+| Priority | select |
+| Status | status |
+
+## Data
+
+Database contains 2 pages.
+## Metadata
+
+- **Database ID**: 00000000000000000000000000000003

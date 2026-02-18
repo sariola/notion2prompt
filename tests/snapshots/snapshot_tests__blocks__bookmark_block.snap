@@ -1,0 +1,5 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render_one(&bookmark(\"https://example.com\"))"
+---
+[🔖 https://example.com]

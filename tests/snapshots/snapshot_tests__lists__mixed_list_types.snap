@@ -1,0 +1,8 @@
+---
+source: tests/snapshot_tests.rs
+expression: "render(&[bulleted(\"Bullet A\"), bulleted(\"Bullet B\"), numbered(\"Number 1\"),\nnumbered(\"Number 2\"),])"
+---
+- Bullet A
+- Bullet B
+1. Number 1
+1. Number 2
