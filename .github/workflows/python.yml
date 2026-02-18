@@ -31,7 +31,7 @@ jobs:
         with:
           target: ${{ matrix.platform.target }}
           args: ${{ matrix.platform.args }}
-          manylinux: 2_28
+          container: ghcr.io/pypa/manylinux_2_28_${{ matrix.platform.target }}:latest
           before-script-linux: |
             dnf install -y openssl-devel perl-IPC-Cmd 2>/dev/null || apk add openssl-dev 2>/dev/null || true
       - name: Upload wheels
