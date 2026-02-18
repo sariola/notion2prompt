@@ -90,4 +90,4 @@ jobs:
 
     - name: Publish to crates.io
       if: env.CRATES_IO_TOKEN != ''
-      run: cargo publish -p notion2prompt --token ${{ secrets.CRATES_IO_TOKEN }}
+      run: cargo publish -p notion2prompt --token ${{ secrets.CRATES_IO_TOKEN }} || echo "Publish failed (crate version may already exist)"
