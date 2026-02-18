@@ -31,9 +31,9 @@ jobs:
         with:
           target: ${{ matrix.platform.target }}
           args: ${{ matrix.platform.args }}
-          manylinux: auto
+          manylinux: 2_28
           before-script-linux: |
-            yum install -y openssl-devel perl-IPC-Cmd 2>/dev/null || apk add openssl-dev 2>/dev/null || true
+            dnf install -y openssl-devel perl-IPC-Cmd 2>/dev/null || apk add openssl-dev 2>/dev/null || true
       - name: Upload wheels
         uses: actions/upload-artifact@v4
         with:
