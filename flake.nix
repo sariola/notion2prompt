@@ -70,7 +70,6 @@
           ];
 
         otherDeps = with pkgs; [
-          zig
           toolchain
           pkg-config
           openssl
@@ -129,7 +128,7 @@
 
         devShells = {
           default = (pkgs.mkShell.override {
-            stdenv = if pkgs.stdenv.isDarwin then pkgs.stdenv else pkgs.gcc11Stdenv;
+            stdenv = if pkgs.stdenv.isDarwin then pkgs.stdenv else pkgs.gcc14Stdenv;
           }) {
             name = "ideation-env";
             venvDir = ".venv";

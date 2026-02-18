@@ -11,7 +11,8 @@ crate-type = ["cdylib"]
 
 [dependencies]
 notion2prompt = { path = "../.." }
-pyo3 = { version = "0.23", features = ["extension-module"] }
-pyo3-async-runtimes = { version = "0.23", features = ["tokio-runtime"] }
+pyo3 = { version = "0.24", features = ["extension-module"] }
+pyo3-async-runtimes = { version = "0.24", features = ["tokio-runtime"] }
 tokio = { version = "1.0", features = ["full"] }
 serde_json = "1.0"
+openssl-sys = { version = "0.9", features = ["vendored"] }
