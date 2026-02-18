@@ -113,6 +113,7 @@ impl RichTextItem {
 }
 
 /// Legacy text content — kept for API deserialization compatibility.
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct TextContent {
     pub content: String,

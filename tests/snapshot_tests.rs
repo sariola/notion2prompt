@@ -622,7 +622,7 @@ fn render(blocks: &[Block]) -> String {
 
 /// Render a single block.
 fn render_one(block: &Block) -> String {
-    render(&[block.clone()])
+    render(std::slice::from_ref(block))
 }
 
 // =============================================================================

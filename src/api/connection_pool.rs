@@ -247,11 +247,7 @@ pub mod health {
             let total_latency = self.total_latency_ms.load(Ordering::Relaxed);
             let connection_errors = self.connection_errors.load(Ordering::Relaxed);
 
-            let avg_latency = if successful > 0 {
-                total_latency / successful
-            } else {
-                0
-            };
+            let avg_latency = total_latency.checked_div(successful).unwrap_or(0);
 
             HealthStats {
                 successful_requests: successful,
