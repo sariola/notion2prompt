@@ -44,6 +44,7 @@ impl ApiKey {
 
     /// Create an API key without validation (only for testing)
     #[cfg(test)]
+    #[allow(dead_code)]
     pub fn new_unchecked(key: impl Into<String>) -> Self {
         Self(key.into())
     }

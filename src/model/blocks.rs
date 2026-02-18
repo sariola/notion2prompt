@@ -196,7 +196,7 @@ pub struct ChildPageBlock {
 /// (whose data is directly fetchable) or a linked database (a read-only view
 /// that the Notion API cannot retrieve). This type makes that distinction
 /// explicit so every consumer handles each case meaningfully.
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
 #[serde(tag = "status", content = "data")]
 pub enum ChildDatabaseContent {
     /// Database was fetched successfully with schema and rows.
@@ -207,13 +207,8 @@ pub enum ChildDatabaseContent {
     /// The database could not be accessed (permissions, not found, etc.)
     Inaccessible { reason: String },
     /// Fetch has not been attempted (initial state from block parsing).
+    #[default]
     NotFetched,
-}
-
-impl Default for ChildDatabaseContent {
-    fn default() -> Self {
-        Self::NotFetched
-    }
 }
 
 impl ChildDatabaseContent {

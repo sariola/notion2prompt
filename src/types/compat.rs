@@ -15,6 +15,7 @@ pub enum RollupResult {
 }
 
 /// File data representation for property values
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct FileData {
     pub name: String,

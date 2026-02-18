@@ -104,7 +104,7 @@ pub fn deepest_nesting_level(object: &NotionObject) -> usize {
             .map(|page| blocks_max_depth(&page.blocks, 1))
             .max()
             .unwrap_or(0),
-        NotionObject::Block(block) => blocks_max_depth(&[block.clone()], 1),
+        NotionObject::Block(block) => blocks_max_depth(std::slice::from_ref(block), 1),
     }
 }
 
@@ -161,7 +161,7 @@ fn walk_object(measurement: &mut ContentMeasurement, obj: &NotionObject, depth: 
         }
         NotionObject::Block(block) => {
             measurement.blocks += 1;
-            walk_blocks(measurement, &[block.clone()], depth + 1);
+            walk_blocks(measurement, std::slice::from_ref(block), depth + 1);
         }
     }
 }

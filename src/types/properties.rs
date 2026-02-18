@@ -326,6 +326,7 @@ pub struct EquationData {
 }
 
 /// File reference
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct FileReference {
     pub name: String,
@@ -343,12 +344,14 @@ pub enum FormulaResult {
 }
 
 /// Relation value
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct RelationValue {
     pub id: super::NotionId,
 }
 
 /// Unique ID data
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct UniqueIdData {
     pub number: i64,
@@ -362,6 +365,7 @@ pub struct UrlValue {
 }
 
 /// Verification data
+#[allow(dead_code)]
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct VerificationData {
     pub state: String,
