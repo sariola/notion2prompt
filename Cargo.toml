@@ -3,7 +3,7 @@ members = [".", "crates/notion2prompt-python"]
 
 [package]
 name = "notion2prompt"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["notion2prompt contributors"]
 description = "A Rust CLI tool that converts Notion pages and databases into structured prompts for AI models"

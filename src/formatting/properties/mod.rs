@@ -46,6 +46,7 @@ pub trait PropertyFormatter {
 }
 
 /// Default property formatter implementation.
+#[allow(dead_code)]
 pub struct DefaultPropertyFormatter;
 
 impl PropertyFormatter for DefaultPropertyFormatter {
