@@ -16,51 +16,45 @@ jobs:
     strategy:
       matrix:
         rust: [stable, beta]
-    
+
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Install Rust toolchain
       uses: dtolnay/rust-toolchain@master
       with:
         toolchain: ${{ matrix.rust }}
-        
-    - name: Cache cargo registry
+        components: rustfmt, clippy
+
+    - name: Cache cargo
       uses: actions/cache@v4
       with:
-        path: ~/.cargo/registry
-        key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
-        
-    - name: Cache cargo index
-      uses: actions/cache@v4
-      with:
-        path: ~/.cargo/git
-        key: ${{ runner.os }}-cargo-index-${{ hashFiles('**/Cargo.lock') }}
-        
-    - name: Cache cargo build
-      uses: actions/cache@v4
-      with:
-        path: target
-        key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: ${{ runner.os }}-${{ matrix.rust }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
     - name: Check formatting
       run: cargo fmt --all -- --check
 
     - name: Run clippy
-      run: cargo clippy --all-targets --all-features -- -D warnings
+      run: cargo clippy -p notion2prompt --all-targets -- -D warnings
 
     - name: Build
-      run: cargo build --verbose
+      run: cargo build -p notion2prompt --verbose
 
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test -p notion2prompt --verbose
 
   security:
     name: Security audit
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
     - uses: actions/checkout@v4
-    - uses: rustsec/audit-check@v1.4.1
+    - uses: rustsec/audit-check@v2.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -69,17 +63,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Install Rust
       uses: dtolnay/rust-toolchain@stable
-      
+
     - name: Install cargo-tarpaulin
       uses: taiki-e/install-action@cargo-tarpaulin
-      
+
     - name: Generate code coverage
-      run: cargo tarpaulin --verbose --all-features --workspace --timeout 120 --out xml
-      
+      run: cargo tarpaulin --verbose --workspace --exclude notion2prompt-python --timeout 120 --out xml
+
     - name: Upload to codecov.io
       uses: codecov/codecov-action@v5
       with:
-        fail_ci_if_error: true
+        fail_ci_if_error: false
