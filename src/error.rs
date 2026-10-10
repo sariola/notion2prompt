@@ -258,6 +258,9 @@ impl From<notion_client::NotionClientError> for NotionClientError {
                 message: error.message,
                 request_id: error.request_id,
             },
+            NcError::InvalidUrl { source } => Self::Transport {
+                message: source.to_string(),
+            },
         }
     }
 }

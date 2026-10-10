@@ -8,7 +8,7 @@ use pyo3::prelude::*;
 /// Configuration for the notion2prompt pipeline.
 ///
 /// Mirrors PipelineConfig but with Python-friendly construction.
-#[pyclass(name = "PipelineConfig")]
+#[pyclass(name = "PipelineConfig", from_py_object)]
 #[derive(Clone)]
 pub struct PyPipelineConfig {
     pub(crate) inner: PipelineConfig,
@@ -136,7 +136,7 @@ impl PyPipelineConfig {
 ///
 /// This is an opaque handle to the Rust NotionObject that can be
 /// passed to `render_content()` for template rendering.
-#[pyclass(name = "NotionContent")]
+#[pyclass(name = "NotionContent", from_py_object)]
 #[derive(Clone)]
 pub struct PyNotionContent {
     pub(crate) inner: NotionObject,

@@ -51,7 +51,7 @@
           pkgs.python311
           pkgs.python311Packages.virtualenv
           pkgs.python311Packages.venvShellHook
-          pkgs.nodePackages.pnpm
+          pkgs.pnpm
         ];
 
         # Rust toolchain
@@ -128,7 +128,7 @@
 
         devShells = {
           default = (pkgs.mkShell.override {
-            stdenv = if pkgs.stdenv.isDarwin then pkgs.stdenv else pkgs.gcc14Stdenv;
+            stdenv = if pkgs.stdenv.hostPlatform.isDarwin then pkgs.stdenv else pkgs.gcc14Stdenv;
           }) {
             name = "ideation-env";
             venvDir = ".venv";
@@ -140,9 +140,11 @@
             packages = defaultDeps ++ otherDeps;
             shellHook = ''
               set -eu
+              # venvShellHook creates .venv on first entry, then activates it.
+              venvShellHook
               export UID_DOCKER=$(id -u)
               export GID_DOCKER=$(id -g)
-              export TAILSCALE_IP=$(tailscale ip -4 2>/dev/null)
+              export TAILSCALE_IP="$(tailscale ip -4 2>/dev/null || true)"
               source .venv/bin/activate
               export PYTHONPATH="$(pwd)/.venv/${pkgs.python311.sitePackages}:$PYTHONPATH:${pkgs.python311}/${pkgs.python311.sitePackages}"
               

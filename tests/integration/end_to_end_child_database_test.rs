@@ -7,7 +7,7 @@
 //! 1. Mocks API responses using existing fixtures
 //! 2. Runs the full 3-stage pipeline (Fetch → Transform → Output)
 //! 3. Verifies "Key Highlights" database appears in final markdown
-//! 4. Creates snapshot tests for regression detection
+//! 4. Checks the committed snapshot still contains the child database table
 
 use notion2prompt::*;
 use reqwest::StatusCode;
@@ -266,7 +266,7 @@ mod tests {
         );
         println!(
             "=== Markdown content preview (first 500 chars): ===\n{}",
-            &markdown_content.chars().take(500).collect::<String>()
+            markdown_content.chars().take(500).collect::<String>()
         );
 
         // Stage 3: Output (generate final content)
@@ -319,16 +319,8 @@ mod tests {
             table_lines
         );
 
-        // Create snapshot for regression testing
-        let snapshot_path = "tests/snapshots/end_to_end_child_database_output.md";
-        if let Some(parent) = std::path::Path::new(snapshot_path).parent() {
-            fs::create_dir_all(parent).expect("Failed to create snapshots directory");
-        }
-        fs::write(snapshot_path, &final_output).expect("Failed to write snapshot");
-
         println!("✅ End-to-end pipeline test passed!");
         println!("📄 Final output length: {} characters", final_output.len());
-        println!("💾 Snapshot saved to: {}", snapshot_path);
 
         // Basic structure assertions
         assert!(
