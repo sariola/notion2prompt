@@ -492,7 +492,7 @@ fn convert_user(
     Ok(crate::types::PartialUser {
         id: user.id,
         name: user.name,
-        avatar_url: user.avator_url, // Note: typo in notion-client
+        avatar_url: user.avatar_url,
     })
 }
 
